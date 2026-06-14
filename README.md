@@ -3,3 +3,5 @@ Site simples criado com HTML, CSS e JavaScript para controle financeiro
 
 Este site foi feito com o objetivo de aprimorar minhas habilidades em HTML, CSS e JavaScript!
 Por isso é um site simples, que irá te ajudar a ter um melhor controle financeiro.
+
+O site não está 100% completo, estou adicionando novos recursos!
