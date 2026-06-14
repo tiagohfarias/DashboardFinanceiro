@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Financeiro</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+
+    <h2>Dashboard Financeiro</h2>
+
+    <input type="number" id="valor" placeholder="Digite o valor...">
+
+    <select id="categoria">
+        <option value="Receita">Receita</option>
+        <option value="Despesa">Despesa</option>
+        <option value="Investimento">Investimento</option>
+    </select>
+
+    <button onclick="addTransaction()">Adicionar transição</button>
+    <div class="info-area">
+
+        <div class="card">
+
+            <h3>Transações</h3>
+            <p>Receita: <span id="receitaTotal">0</span></p>
+            <p>Despesa: <span id="despesaTotal">0</span></p>
+            <p>Investimento: <span id="investimentoTotal">0</span></p>
+            <p>Saldo: <span id="saldoTotal">R$ 0</span></p>
+
+        </div>
+        <div class="card">
+            <h3>Histórico</h3>
+            <div id="historico"></div>
+        </div>
+
+    </div>
+    
+    <canvas id="graficoFinanceiro"></canvas>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
